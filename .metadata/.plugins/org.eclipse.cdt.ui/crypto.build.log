@@ -1,0 +1,31 @@
+20:04:21 **** Build of configuration Debug for project crypto ****
+make all 
+Building file: ../src/HexHelper.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HexHelper.d" -MT"src/HexHelper.o" -o "src/HexHelper.o" "../src/HexHelper.cpp"
+Finished building: ../src/HexHelper.cpp
+ 
+Building file: ../src/crypto.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto.d" -MT"src/crypto.o" -o "src/crypto.o" "../src/crypto.cpp"
+Finished building: ../src/crypto.cpp
+ 
+Building file: ../src/crypto_AES.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto_AES.d" -MT"src/crypto_AES.o" -o "src/crypto_AES.o" "../src/crypto_AES.cpp"
+Finished building: ../src/crypto_AES.cpp
+ 
+Building file: ../COMPLEXITY_TO_AVOID/Reindaal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"COMPLEXITY_TO_AVOID/Reindaal.d" -MT"COMPLEXITY_TO_AVOID/Reindaal.o" -o "COMPLEXITY_TO_AVOID/Reindaal.o" "../COMPLEXITY_TO_AVOID/Reindaal.cpp"
+Finished building: ../COMPLEXITY_TO_AVOID/Reindaal.cpp
+ 
+Building target: libcrypto.a
+Invoking: GCC Archiver
+ar -r  "libcrypto.a"  ./src/HexHelper.o ./src/crypto.o ./src/crypto_AES.o  ./COMPLEXITY_TO_AVOID/Reindaal.o   
+ar: creating libcrypto.a
+Finished building target: libcrypto.a
+ 
+
+20:04:25 Build Finished (took 3s.647ms)
+

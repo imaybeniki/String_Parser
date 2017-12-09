@@ -3,6 +3,7 @@
 	<name>datastore</name>
 	<comment></comment>
 	<projects>
+		<project>crypto</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

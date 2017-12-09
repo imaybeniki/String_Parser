@@ -1,0 +1,1459 @@
+17:54:13 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+17:54:14 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+17:54:15 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+make: *** [src/string_database.o] Error 1
+19:00:59 **** Clean-only build of configuration Debug for project crypto ****
+make clean 
+rm -rf  ./src/HexHelper.o ./src/crypto.o ./src/crypto_AES.o  ./COMPLEXITY_TO_AVOID/Reindaal.o  ./src/HexHelper.d ./src/crypto.d ./src/crypto_AES.d  ./COMPLEXITY_TO_AVOID/Reindaal.d  libcrypto.a
+ 
+19:01:01 **** Clean-only build of configuration Debug for project datastore ****
+make clean 
+rm -rf  ./src/data_store.o ./src/data_store_file.o ./src/string_data.o  ./src/data_store.d ./src/data_store_file.d ./src/string_data.d  libdatastore.a
+ 
+19:01:03 **** Clean-only build of configuration Debug for project stringdatabase ****
+make clean 
+rm -rf  ./src/string_database.o  ./src/string_database.d  libstringdatabase.a
+ 
+19:01:10 **** Build of configuration Debug for project crypto ****
+make all 
+Building file: ../src/HexHelper.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HexHelper.d" -MT"src/HexHelper.o" -o "src/HexHelper.o" "../src/HexHelper.cpp"
+Finished building: ../src/HexHelper.cpp
+ 
+Building file: ../src/crypto.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto.d" -MT"src/crypto.o" -o "src/crypto.o" "../src/crypto.cpp"
+Finished building: ../src/crypto.cpp
+ 
+Building file: ../src/crypto_AES.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto_AES.d" -MT"src/crypto_AES.o" -o "src/crypto_AES.o" "../src/crypto_AES.cpp"
+Finished building: ../src/crypto_AES.cpp
+ 
+Building file: ../COMPLEXITY_TO_AVOID/Reindaal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"COMPLEXITY_TO_AVOID/Reindaal.d" -MT"COMPLEXITY_TO_AVOID/Reindaal.o" -o "COMPLEXITY_TO_AVOID/Reindaal.o" "../COMPLEXITY_TO_AVOID/Reindaal.cpp"
+Finished building: ../COMPLEXITY_TO_AVOID/Reindaal.cpp
+ 
+Building target: libcrypto.a
+Invoking: GCC Archiver
+ar -r  "libcrypto.a"  ./src/HexHelper.o ./src/crypto.o ./src/crypto_AES.o  ./COMPLEXITY_TO_AVOID/Reindaal.o   
+ar: creating libcrypto.a
+Finished building target: libcrypto.a
+ 
+19:01:16 **** Build of configuration Debug for project datastore ****
+make all 
+Building file: ../src/data_store.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/data_store.d" -MT"src/data_store.o" -o "src/data_store.o" "../src/data_store.cpp"
+Finished building: ../src/data_store.cpp
+ 
+Building file: ../src/data_store_file.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/data_store_file.d" -MT"src/data_store_file.o" -o "src/data_store_file.o" "../src/data_store_file.cpp"
+Finished building: ../src/data_store_file.cpp
+ 
+Building file: ../src/string_data.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/string_data.d" -MT"src/string_data.o" -o "src/string_data.o" "../src/string_data.cpp"
+Finished building: ../src/string_data.cpp
+ 
+Building target: libdatastore.a
+Invoking: GCC Archiver
+ar -r  "libdatastore.a"  ./src/data_store.o ./src/data_store_file.o ./src/string_data.o   
+ar: creating libdatastore.a
+Finished building target: libdatastore.a
+ 
+19:01:18 **** Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:6:1: error: ‘String_Database’ does not name a type
+ String_Database::String_Database(void) {
+ ^
+../src/string_database.cpp:9:1: error: ‘String_Database’ does not name a type
+ String_Database::~String_Database(void) {
+ ^
+../src/string_database.cpp:12:6: error: ‘String_Database’ has not been declared
+ void String_Database::add(std::string& myString) {
+      ^
+../src/string_database.cpp:12:32: error: variable or field ‘add’ declared void
+ void String_Database::add(std::string& myString) {
+                                ^
+../src/string_database.cpp:12:27: error: ‘string’ is not a member of ‘std’
+ void String_Database::add(std::string& myString) {
+                           ^
+../src/string_database.cpp:12:40: error: ‘myString’ was not declared in this scope
+ void String_Database::add(std::string& myString) {
+                                        ^
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+make: *** [src/string_database.o] Error 1
+19:02:37 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:02:37 **** Build of configuration Debug for project crypto_test ****
+make all 
+Building file: ../src/crypto_test.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto_test.d" -MT"src/crypto_test.o" -o "src/crypto_test.o" "../src/crypto_test.cpp"
+Finished building: ../src/crypto_test.cpp
+ 
+Building target: crypto_test
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "crypto_test"  ./src/crypto_test.o   -lcrypto
+Finished building target: crypto_test
+ 
+19:02:40 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:02:40 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:13:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+In file included from ../src/../includes/string_database.h:5:0,
+                 from ../src/string_database.cpp:2:
+../src/../includes/../../datastore/includes/string_data.h:8:14: error: ‘std::__cxx11::string String_Data::data’ is private
+  std::string data;
+              ^
+../src/string_database.cpp:14:29: error: within this context
+   if(myString==myStrings[i].data){
+                             ^
+In file included from ../src/../includes/string_database.h:5:0,
+                 from ../src/string_database.cpp:2:
+../src/../includes/../../datastore/includes/string_data.h:9:6: error: ‘int String_Data::useCount’ is private
+  int useCount;
+      ^
+../src/string_database.cpp:15:17: error: within this context
+    myStrings[i].useCount++;
+                 ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:26:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+In file included from ../src/../includes/string_database.h:5:0,
+                 from ../src/string_database.cpp:2:
+../src/../includes/../../datastore/includes/string_data.h:8:14: error: ‘std::__cxx11::string String_Data::data’ is private
+  std::string data;
+              ^
+../src/string_database.cpp:27:29: error: within this context
+   if(myString==myStrings[i].data){
+                             ^
+In file included from ../src/../includes/string_database.h:5:0,
+                 from ../src/string_database.cpp:2:
+../src/../includes/../../datastore/includes/string_data.h:9:6: error: ‘int String_Data::useCount’ is private
+  int useCount;
+      ^
+../src/string_database.cpp:28:24: error: within this context
+    return myStrings[i].useCount;
+                        ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:54:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/string_database.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:02:42 **** Build of configuration Debug for project MED_Tester ****
+make all 
+Building file: ../src/MED_Tester.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/stringdatabase" -I"/home/christopher/Desktop/String_Parser/datastore" -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MED_Tester.d" -MT"src/MED_Tester.o" -o "src/MED_Tester.o" "../src/MED_Tester.cpp"
+Finished building: ../src/MED_Tester.cpp
+ 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:03:35 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:03:36 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:03:37 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:18:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:8:14: error: ‘std::__cxx11::string String_Data::data’ is private
+  std::string data;
+              ^
+../src/string_database.cpp:19:29: error: within this context
+   if(myString==myStrings[i].data){
+                             ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:9:6: error: ‘int String_Data::useCount’ is private
+  int useCount;
+      ^
+../src/string_database.cpp:20:17: error: within this context
+    myStrings[i].useCount++;
+                 ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:31:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:8:14: error: ‘std::__cxx11::string String_Data::data’ is private
+  std::string data;
+              ^
+../src/string_database.cpp:32:29: error: within this context
+   if(myString==myStrings[i].data){
+                             ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:9:6: error: ‘int String_Data::useCount’ is private
+  int useCount;
+      ^
+../src/string_database.cpp:33:24: error: within this context
+    return myStrings[i].useCount;
+                        ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:59:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/string_database.cpp:59:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+make: *** [src/string_database.o] Error 1
+19:09:49 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:09:49 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:09:50 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:09:51 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:18:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:8:14: error: ‘std::__cxx11::string String_Data::data’ is private
+  std::string data;
+              ^
+../src/string_database.cpp:19:29: error: within this context
+   if(myString==myStrings[i].data){
+                             ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:32:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp:33:29: error: expected unqualified-id before ‘)’ token
+   if(myString==myStrings[i].){
+                             ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:60:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/string_database.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:09:54 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:13:34 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:13:35 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:13:36 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:18:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:32:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp:33:29: error: expected unqualified-id before ‘)’ token
+   if(myString==myStrings[i].){
+                             ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:60:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/string_database.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+make: *** [src/string_database.o] Error 1
+19:14:41 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:14:42 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:14:42 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:18:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:32:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:60:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/string_database.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:15:11 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:15:11 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:15:12 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:15:13 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:18:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:32:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccBbYkxK.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:26: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:26: undefined reference to `String_Data::~String_Data()'
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:26: undefined reference to `String_Data::~String_Data()'
+/tmp/ccBbYkxK.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::~String_Data()'
+/tmp/ccBbYkxK.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data>(String_Data*, String_Data&&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccBbYkxK.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+/tmp/ccBbYkxK.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccBbYkxK.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+19:15:16 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:34:51 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:51 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:52 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:53 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:18:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:32:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccw2yoVO.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::~String_Data()'
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:26: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:26: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:26: undefined reference to `String_Data::~String_Data()'
+/tmp/ccw2yoVO.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:33: undefined reference to `String_Data::~String_Data()'
+/tmp/ccw2yoVO.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data>(String_Data*, String_Data&&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccw2yoVO.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+/tmp/ccw2yoVO.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccw2yoVO.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+19:34:56 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:45:06 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:06 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:07 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:07 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:19:49: error: conversion from ‘String_Data*’ to non-scalar type ‘String_Data’ requested
+  String_Data tempValue= new String_Data(myString);
+                                                 ^
+../src/string_database.cpp:20:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:34:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:45:09 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:46:20 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:46:21 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:46:21 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:46:22 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp:21:40: error: no matching function for call to ‘String_Data::operator==(String_Data*&)’
+   if(myStrings[i].operator ==(tempValue)){
+                                        ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:33:7: note: candidate: bool String_Data::operator==(const String_Data&)
+  bool operator==( const String_Data &ud); 
+       ^
+../src/../../datastore/includes/string_data.h:33:7: note:   no known conversion for argument 1 from ‘String_Data*’ to ‘const String_Data&’
+../src/string_database.cpp:28:31: error: no matching function for call to ‘std::vector<String_Data>::push_back(String_Data*&)’
+  myStrings.push_back(tempValue);
+                               ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ../src/string_database.cpp:3:
+/usr/include/c++/5/bits/stl_vector.h:913:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = String_Data; _Alloc = std::allocator<String_Data>; std::vector<_Tp, _Alloc>::value_type = String_Data]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:913:7: note:   no known conversion for argument 1 from ‘String_Data*’ to ‘const value_type& {aka const String_Data&}’
+/usr/include/c++/5/bits/stl_vector.h:931:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = String_Data; _Alloc = std::allocator<String_Data>; std::vector<_Tp, _Alloc>::value_type = String_Data]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:931:7: note:   no known conversion for argument 1 from ‘String_Data*’ to ‘std::vector<String_Data>::value_type&& {aka String_Data&&}’
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:34:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:46:24 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:47:39 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:40 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:40 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:41 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp:28:31: error: no matching function for call to ‘std::vector<String_Data>::push_back(String_Data*&)’
+  myStrings.push_back(tempValue);
+                               ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ../src/string_database.cpp:3:
+/usr/include/c++/5/bits/stl_vector.h:913:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = String_Data; _Alloc = std::allocator<String_Data>; std::vector<_Tp, _Alloc>::value_type = String_Data]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:913:7: note:   no known conversion for argument 1 from ‘String_Data*’ to ‘const value_type& {aka const String_Data&}’
+/usr/include/c++/5/bits/stl_vector.h:931:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = String_Data; _Alloc = std::allocator<String_Data>; std::vector<_Tp, _Alloc>::value_type = String_Data]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:931:7: note:   no known conversion for argument 1 from ‘String_Data*’ to ‘std::vector<String_Data>::value_type&& {aka String_Data&&}’
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:34:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:47:43 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:47:55 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:55 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:56 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:56 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:34:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccxPXcfK.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:21: undefined reference to `String_Data::operator==(String_Data const&)'
+/tmp/ccxPXcfK.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::~String_Data()'
+/tmp/ccxPXcfK.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data const&>(String_Data*, String_Data const&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccxPXcfK.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccxPXcfK.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+/tmp/ccxPXcfK.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+19:47:59 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:48:35 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:48:36 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:48:36 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:48:37 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:34:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccB5WFWr.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:19: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:21: undefined reference to `String_Data::operator==(String_Data const&)'
+/tmp/ccB5WFWr.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:35: undefined reference to `String_Data::~String_Data()'
+/tmp/ccB5WFWr.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data const&>(String_Data*, String_Data const&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccB5WFWr.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccB5WFWr.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/tmp/ccB5WFWr.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+19:48:40 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+makefile:50: recipe for target 'MED_Tester' failed
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+19:49:18 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:18 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:19 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:19 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:2: error: expected initializer before ‘Value’
+  Value= new String_Data(myString,1);
+  ^
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp:22:32: error: ‘tempValue’ was not declared in this scope
+   if(myStrings[i].operator ==(*tempValue)){
+                                ^
+../src/string_database.cpp:29:23: error: ‘tempValue’ was not declared in this scope
+  myStrings.push_back(*tempValue);
+                       ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:49:21 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:49:27 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:28 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:29 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:29 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp:22:32: error: ‘tempValue’ was not declared in this scope
+   if(myStrings[i].operator ==(*tempValue)){
+                                ^
+../src/string_database.cpp:29:23: error: ‘tempValue’ was not declared in this scope
+  myStrings.push_back(*tempValue);
+                       ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:49:31 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:49:53 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:53 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:54 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:55 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/cc1eD1Vh.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:20: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:22: undefined reference to `String_Data::operator==(String_Data const&)'
+/tmp/cc1eD1Vh.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/tmp/cc1eD1Vh.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data const&>(String_Data*, String_Data const&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/cc1eD1Vh.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/cc1eD1Vh.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/tmp/cc1eD1Vh.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+19:49:57 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:50:55 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:55 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:56 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:56 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccw4kgfz.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:20: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:22: undefined reference to `String_Data::operator==(String_Data const&)'
+/tmp/ccw4kgfz.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/tmp/ccw4kgfz.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data const&>(String_Data*, String_Data const&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccw4kgfz.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccw4kgfz.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+/tmp/ccw4kgfz.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+19:50:59 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+makefile:50: recipe for target 'MED_Tester' failed
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+19:55:06 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:55:06 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:55:07 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccDthBkt.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:20: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:22: undefined reference to `String_Data::operator==(String_Data const&)'
+/tmp/ccDthBkt.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/tmp/ccDthBkt.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data const&>(String_Data*, String_Data const&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccDthBkt.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccDthBkt.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+/tmp/ccDthBkt.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+19:56:08 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:08 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:09 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:09 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:13: error: ‘string_data’ does not name a type
+  Value= new string_data::String_Data(myString,1);
+             ^
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+make: *** [src/string_database.o] Error 1
+19:56:11 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+19:57:26 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:26 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:27 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:27 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccAcsR4P.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:20: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:22: undefined reference to `String_Data::operator==(String_Data const&)'
+/tmp/ccAcsR4P.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/tmp/ccAcsR4P.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data const&>(String_Data*, String_Data const&)':
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccAcsR4P.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccAcsR4P.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+/tmp/ccAcsR4P.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+19:57:30 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+20:00:58 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:00 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:01 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:02 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:13: error: ‘StringData’ does not name a type
+  Value= new StringData::String_Data(myString,1);
+             ^
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+20:01:04 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+20:01:22 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:22 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:23 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:24 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:13: error: expected type-specifier
+  Value= new String_Data::String_Data(myString,1);
+             ^
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+20:01:26 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+20:01:50 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:51 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:51 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:52 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:20:13: error: expected type-specifier
+  Value= new String_Data::String_Data(myString);
+             ^
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+20:01:53 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+20:03:11 **** Incremental Build of configuration Debug for project crypto ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:11 **** Incremental Build of configuration Debug for project crypto_test ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:12 **** Incremental Build of configuration Debug for project datastore ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:13 **** Incremental Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+/tmp/ccMrnwJK.o: In function `String_Database::add(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:20: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:22: undefined reference to `String_Data::operator==(String_Data const&)'
+/tmp/ccMrnwJK.o: In function `String_Database::getCount(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::String_Data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::operator==(String_Data const&)'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/home/christopher/Desktop/String_Parser/stringdatabase/Debug/../src/string_database.cpp:36: undefined reference to `String_Data::~String_Data()'
+/tmp/ccMrnwJK.o: In function `void __gnu_cxx::new_allocator<String_Data>::construct<String_Data, String_Data const&>(String_Data*, String_Data const&)':
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+/usr/include/c++/5/ext/new_allocator.h:120: undefined reference to `String_Data::String_Data(String_Data const&)'
+/tmp/ccMrnwJK.o: In function `void __gnu_cxx::new_allocator<String_Data>::destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/ext/new_allocator.h:124: undefined reference to `String_Data::~String_Data()'
+/tmp/ccMrnwJK.o: In function `void std::_Destroy<String_Data>(String_Data*)':
+/usr/include/c++/5/bits/stl_construct.h:93: undefined reference to `String_Data::~String_Data()'
+/tmp/ccMrnwJK.o: In function `void std::_Construct<String_Data, String_Data&>(String_Data*, String_Data&)':
+/usr/include/c++/5/bits/stl_construct.h:75: undefined reference to `String_Data::String_Data(String_Data const&)'
+collect2: error: ld returned 1 exit status
+make: *** [src/string_database.o] Error 1
+20:03:16 **** Incremental Build of configuration Debug for project MED_Tester ****
+make all 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1
+makefile:50: recipe for target 'MED_Tester' failed
+20:03:36 **** Clean-only build of configuration Debug for project MED_Tester ****
+make clean 
+rm -rf  ./src/MED_Tester.o  ./src/MED_Tester.d  MED_Tester
+ 
+20:03:37 **** Clean-only build of configuration Debug for project crypto ****
+make clean 
+rm -rf  ./src/HexHelper.o ./src/crypto.o ./src/crypto_AES.o  ./COMPLEXITY_TO_AVOID/Reindaal.o  ./src/HexHelper.d ./src/crypto.d ./src/crypto_AES.d  ./COMPLEXITY_TO_AVOID/Reindaal.d  libcrypto.a
+ 
+20:03:37 **** Clean-only build of configuration Debug for project crypto_test ****
+make clean 
+rm -rf  ./src/crypto_test.o  ./src/crypto_test.d  crypto_test
+ 
+20:03:38 **** Clean-only build of configuration Debug for project datastore ****
+make clean 
+rm -rf  ./src/data_store.o ./src/data_store_file.o ./src/string_data.o  ./src/data_store.d ./src/data_store_file.d ./src/string_data.d  libdatastore.a
+ 
+20:03:38 **** Clean-only build of configuration Debug for project stringdatabase ****
+make clean 
+rm -rf  ./src/string_database.o  ./src/string_database.d  libstringdatabase.a
+ 
+20:04:21 **** Build of configuration Debug for project crypto ****
+make all 
+Building file: ../src/HexHelper.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HexHelper.d" -MT"src/HexHelper.o" -o "src/HexHelper.o" "../src/HexHelper.cpp"
+Finished building: ../src/HexHelper.cpp
+ 
+Building file: ../src/crypto.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto.d" -MT"src/crypto.o" -o "src/crypto.o" "../src/crypto.cpp"
+Finished building: ../src/crypto.cpp
+ 
+Building file: ../src/crypto_AES.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto_AES.d" -MT"src/crypto_AES.o" -o "src/crypto_AES.o" "../src/crypto_AES.cpp"
+Finished building: ../src/crypto_AES.cpp
+ 
+Building file: ../COMPLEXITY_TO_AVOID/Reindaal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"COMPLEXITY_TO_AVOID/Reindaal.d" -MT"COMPLEXITY_TO_AVOID/Reindaal.o" -o "COMPLEXITY_TO_AVOID/Reindaal.o" "../COMPLEXITY_TO_AVOID/Reindaal.cpp"
+Finished building: ../COMPLEXITY_TO_AVOID/Reindaal.cpp
+ 
+Building target: libcrypto.a
+Invoking: GCC Archiver
+ar -r  "libcrypto.a"  ./src/HexHelper.o ./src/crypto.o ./src/crypto_AES.o  ./COMPLEXITY_TO_AVOID/Reindaal.o   
+ar: creating libcrypto.a
+Finished building target: libcrypto.a
+ 
+20:04:25 **** Build of configuration Debug for project crypto_test ****
+make all 
+Building file: ../src/crypto_test.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto_test.d" -MT"src/crypto_test.o" -o "src/crypto_test.o" "../src/crypto_test.cpp"
+Finished building: ../src/crypto_test.cpp
+ 
+Building target: crypto_test
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "crypto_test"  ./src/crypto_test.o   -lcrypto
+Finished building target: crypto_test
+ 
+20:04:27 **** Build of configuration Debug for project datastore ****
+make all 
+Building file: ../src/data_store.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/data_store.d" -MT"src/data_store.o" -o "src/data_store.o" "../src/data_store.cpp"
+Finished building: ../src/data_store.cpp
+ 
+Building file: ../src/data_store_file.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/data_store_file.d" -MT"src/data_store_file.o" -o "src/data_store_file.o" "../src/data_store_file.cpp"
+Finished building: ../src/data_store_file.cpp
+ 
+Building file: ../src/string_data.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/string_data.d" -MT"src/string_data.o" -o "src/string_data.o" "../src/string_data.cpp"
+Finished building: ../src/string_data.cpp
+ 
+Building target: libdatastore.a
+Invoking: GCC Archiver
+ar -r  "libdatastore.a"  ./src/data_store.o ./src/data_store_file.o ./src/string_data.o   
+ar: creating libdatastore.a
+Finished building target: libdatastore.a
+ 
+20:04:29 **** Build of configuration Debug for project stringdatabase ****
+make all 
+Building file: ../src/string_database.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/datastore" -O0 -g3 -Wall -std=c++11 -MMD -MP -MF"src/string_database.d" -MT"src/string_database.o" -o "src/string_database.o" "../src/string_database.cpp"
+../src/string_database.cpp:1:9: warning: #pragma once in main file
+ #pragma once
+         ^
+../src/string_database.cpp: In member function ‘void String_Database::add(std::__cxx11::string&)’:
+../src/string_database.cpp:19:14: error: no matching function for call to ‘String_Data::String_Data()’
+  String_Data Value;
+              ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:20:2: note: candidate: String_Data::String_Data(std::__cxx11::string, int)
+  String_Data(std::string data, int useCount=1);
+  ^
+../src/../../datastore/includes/string_data.h:20:2: note:   candidate expects 2 arguments, 0 provided
+../src/../../datastore/includes/string_data.h:17:2: note: candidate: String_Data::String_Data(const String_Data&)
+  String_Data(const String_Data &other);
+  ^
+../src/../../datastore/includes/string_data.h:17:2: note:   candidate expects 1 argument, 0 provided
+../src/string_database.cpp:20:7: error: no match for ‘operator=’ (operand types are ‘String_Data’ and ‘String_Data*’)
+  Value= new String_Data(myString);
+       ^
+In file included from ../src/string_database.cpp:5:0:
+../src/../../datastore/includes/string_data.h:12:21: note: candidate: const String_Data& String_Data::operator=(const String_Data&)
+  const String_Data &operator=(const String_Data &other);
+                     ^
+../src/../../datastore/includes/string_data.h:12:21: note:   no known conversion for argument 1 from ‘String_Data*’ to ‘const String_Data&’
+../src/string_database.cpp:21:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘int String_Database::getCount(std::__cxx11::string&)’:
+../src/string_database.cpp:35:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<myStrings.size();i++){
+               ^
+../src/string_database.cpp: In member function ‘bool String_Database::save(DataStore*)’:
+../src/string_database.cpp:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/string_database.o] Error 1
+src/subdir.mk:18: recipe for target 'src/string_database.o' failed
+20:04:31 **** Build of configuration Debug for project MED_Tester ****
+make all 
+Building file: ../src/MED_Tester.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -pthread -I"/home/christopher/Desktop/String_Parser/stringdatabase" -I"/home/christopher/Desktop/String_Parser/datastore" -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MED_Tester.d" -MT"src/MED_Tester.o" -o "src/MED_Tester.o" "../src/MED_Tester.cpp"
+Finished building: ../src/MED_Tester.cpp
+ 
+Building target: MED_Tester
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/stringdatabase/Debug" -L"/home/christopher/Desktop/String_Parser/datastore/Debug" -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "MED_Tester"  ./src/MED_Tester.o   -lstringdatabase -ldatastore -lcrypto
+makefile:50: recipe for target 'MED_Tester' failed
+/usr/bin/ld: cannot find -lstringdatabase
+collect2: error: ld returned 1 exit status
+make: *** [MED_Tester] Error 1

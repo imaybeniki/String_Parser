@@ -1,0 +1,34 @@
+
+
+
+
+
+String_Database::String_Database(void) {
+}
+
+String_Database::~String_Database(void) {
+}
+
+void String_Database::add(std::string& myString) {
+	for(int i=0;i<=myStrings.size();i++){
+		if(myString==myStrings[i].data){
+			myStrings[i].useCount++;
+			break;
+		}
+		myStrings.insert(myString)
+	}
+
+
+}
+
+int String_Database::getCount(std::string& myString) {
+}
+
+void String_Database::clear() {
+}
+
+bool String_Database::load(DataStore* myDataStore) {
+}
+
+bool String_Database::save(DataStore* myDataStore) {
+}

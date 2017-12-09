@@ -1,0 +1,15 @@
+20:04:25 **** Build of configuration Debug for project crypto_test ****
+make all 
+Building file: ../src/crypto_test.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/christopher/Desktop/String_Parser/crypto" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/crypto_test.d" -MT"src/crypto_test.o" -o "src/crypto_test.o" "../src/crypto_test.cpp"
+Finished building: ../src/crypto_test.cpp
+ 
+Building target: crypto_test
+Invoking: GCC C++ Linker
+g++ -L"/home/christopher/Desktop/String_Parser/crypto/Debug" -o "crypto_test"  ./src/crypto_test.o   -lcrypto
+Finished building target: crypto_test
+ 
+
+20:04:27 Build Finished (took 1s.599ms)
+

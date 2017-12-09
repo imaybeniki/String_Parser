@@ -3,6 +3,7 @@
 	<name>stringdatabase</name>
 	<comment></comment>
 	<projects>
+		<project>datastore</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
